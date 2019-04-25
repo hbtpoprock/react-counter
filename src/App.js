@@ -57,7 +57,7 @@ class App extends React.Component {
     increment() {
         if (this.state.input !== '') {
             this.setState({
-                input: parseInt(this.state.input) + 1,
+                input: this.state.input + 1,
                 submit: ''
             })
         } else {
@@ -69,7 +69,7 @@ class App extends React.Component {
     decrement() {
         if (this.state.input !== '') {
             this.setState({
-                input: parseInt(this.state.input) - 1,
+                input: this.state.input - 1,
                 submit: ''
             })
         } else {
